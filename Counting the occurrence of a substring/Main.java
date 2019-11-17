@@ -1,0 +1,2 @@
+import java.util.Scanner; class Main{ public static void main(String args[]) { // Type your code here
+  Scanner sn = new Scanner(System.in); String str = sn.nextLine(); String str1 = sn.nextLine(); int s_len = str.length(); int s1_len = str1.length(); int count=0; for(int i=0;i<(s_len-s1_len+1);i++) { boolean is_matching = true; for(int j=0;j<s1_len;j++) { if(str.charAt(i+j)!=str1.charAt(j)) { is_matching = false; } } if(is_matching == true) { count+=1; } } System.out.println(count); } }
